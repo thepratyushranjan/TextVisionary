@@ -1,0 +1,98 @@
+/* Container for the image display and buttons */
+.image-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Styling for the image */
+.image-display img {
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Container for the buttons */
+.image-display-buttons {
+    margin-top: 20px;
+}
+
+/* General styling for buttons */
+.image-display-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Styling for the Preview button */
+.image-display-buttons .preview-btn {
+    background-color: rgba(212, 141, 7, 0.925); /* Pink */
+}
+
+.image-display-buttons .preview-btn:hover {
+    background-color: rgba(212, 141, 7, 0.925); /* Darker pink */
+}
+
+/* Styling for the Download button */
+.image-display-buttons .download-btn {
+    background-color: #28a745; /* Green */
+}
+
+.image-display-buttons .download-btn:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Styling for the preview modal */
+.preview-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Content inside the preview modal */
+.preview-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Image inside the preview modal */
+.preview-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Close button for the modal */
+.close {
+    position: absolute;
+    top: 80px;
+    right: 136px;
+    font-size: 100px;
+    color: black;
+    cursor: pointer;
+}
+
+.header {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.header span {
+    color: #DE1B89;
+    font-weight: 600;
+}
